@@ -29,13 +29,13 @@ jobs:
         run: lessc dist/less/bootstrap-multiselect.less temp/bootstrap-multiselect.css
         
       - name: Minify CSS
-        uses: nizarmah/auto-minify@v2.
+        uses: nizarmah/auto-minify@v2.1
         with:
           directory: "temp/bootstrap-multiselect.css"
           output: "artifacts/bootstrap-multiselect.min.css"
           
       - name: Minify JS
-        uses: nizarmah/auto-minify@v2.
+        uses: nizarmah/auto-minify@v2.1
         with:
           directory: "dist/js/bootstrap-multiselect.js"
           output: "../../temp/artifacts/bootstrap-multiselect.min.js"
