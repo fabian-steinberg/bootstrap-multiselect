@@ -1,4 +1,4 @@
-name: uglify_js
+name: release
 
 on:
   push:
