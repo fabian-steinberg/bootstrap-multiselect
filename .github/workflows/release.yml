@@ -35,13 +35,13 @@ jobs:
         uses: nizarmah/auto-minify@v2.1
         with:
           directory: "temp/bootstrap-multiselect.css"
-          output: "artifacts/bootstrap-multiselect.min.css"
+          output: "temp/artifacts/"
           
       - name: Minify JS
         uses: nizarmah/auto-minify@v2.1
         with:
           directory: "dist/js/bootstrap-multiselect.js"
-          output: "../../temp/artifacts/bootstrap-multiselect.min.js"
+          output: "temp/artifacts/"
           
       - name: test
         run: ls temp/artifacts
