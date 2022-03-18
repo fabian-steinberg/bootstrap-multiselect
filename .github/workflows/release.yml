@@ -19,7 +19,10 @@ jobs:
         with:
           node-version: "16"
           
-      - name: Make temporary artifact directory
+      - name: Make temporary directory
+        run: mkdir temp/
+        
+      - name: Make temporary artifacts directory
         run: mkdir temp/artifacts/
         
       - name: Install LESS compiler
